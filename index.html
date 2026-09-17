@@ -7,90 +7,33 @@
   <title>Winkler Prins | Leerlingen</title>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
-    :root{--blue:#155eef;--dark:#071426;--card:#101f35;--text:#f6f9ff;--muted:#9eb0c8;--line:rgba(255,255,255,.09)}
+    :root{--blue:#155eef;--dark:#071426;--text:#f6f9ff;--line:rgba(255,255,255,.09)}
     html{scroll-behavior:smooth}
     body{font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#071426 0%,#0b1930 55%,#f3f6fb 55%,#f3f6fb 100%);color:var(--text);line-height:1.6}
     header{position:sticky;top:0;z-index:20;background:rgba(7,20,38,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
     .nav{max-width:1180px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:20px}
-    .mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#4f8cff,#155eef);display:grid;place-items:center;box-shadow:0 0 24px rgba(21,94,239,.45);font-size:13px}
-    nav a{color:#c8d5e8;text-decoration:none;margin-left:25px;font-weight:700;font-size:14px}
-    nav a:hover{color:#fff}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:20px}.mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#4f8cff,#155eef);display:grid;place-items:center;box-shadow:0 0 24px rgba(21,94,239,.45);font-size:13px}
+    nav a{color:#c8d5e8;text-decoration:none;margin-left:25px;font-weight:700;font-size:14px}nav a:hover{color:#fff}
     .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(62,133,255,.35),transparent 30%),radial-gradient(circle at 20% 80%,rgba(122,78,255,.2),transparent 28%)}
     .hero:before{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.08);border-radius:50%;right:-130px;top:-150px}
-    .hero-inner{max-width:1180px;margin:auto;padding:82px 24px 90px;position:relative}
-    .tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);padding:8px 13px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.08em;margin-bottom:20px;color:#dbe8ff}
-    .tag:before{content:"●";color:#63e6be;font-size:10px}
-    h1{font-size:clamp(48px,8vw,86px);line-height:.98;letter-spacing:-.055em;max-width:850px;margin-bottom:22px}
-    .gradient{background:linear-gradient(90deg,#fff,#8bb5ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .hero p{font-size:19px;max-width:680px;color:#b7c8df;margin-bottom:30px}
-    .buttons{display:flex;gap:13px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:14px 20px;border-radius:12px;font-weight:900;transition:.2s;border:1px solid transparent}
-    .btn:hover{transform:translateY(-3px)}
-    .btn-primary{background:#fff;color:#0b2c63;box-shadow:0 12px 30px rgba(0,0,0,.18)}
-    .btn-blue{background:linear-gradient(135deg,#2d75ff,#155eef);color:#fff;box-shadow:0 12px 28px rgba(21,94,239,.3)}
-    .btn-outline{border-color:rgba(255,255,255,.2);color:#fff;background:rgba(255,255,255,.04)}
-    main{max-width:1180px;margin:auto;padding:58px 24px 70px;color:#13233a}
-    .section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}
-    .section-title h2{font-size:31px;letter-spacing:-.03em}
-    .section-title p{color:#718096}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:#fff;border:1px solid #e3e9f2;border-radius:20px;padding:26px;box-shadow:0 12px 35px rgba(20,45,80,.07);transition:.2s}
-    .card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(20,45,80,.12)}
-    .icon{font-size:29px;margin-bottom:15px}.card h3{font-size:21px;margin-bottom:7px}.card p{color:#66758b}
-    .games{margin-top:20px;background:linear-gradient(135deg,#0c1c33,#122b50);color:#fff;border-radius:22px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px;position:relative;overflow:hidden}
-    .games:after{content:"🎮";position:absolute;right:30px;bottom:-28px;font-size:130px;opacity:.08;transform:rotate(-12deg)}
-    .games-copy{position:relative;z-index:1}.games h2{font-size:30px;margin-bottom:5px}.games p{color:#b9c8dc;max-width:600px}
-    .magister{margin-top:18px;background:#eaf2fc;border-radius:22px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-    .magister h2{font-size:28px;margin-bottom:5px}.magister p{color:#60708a}.magister .btn{white-space:nowrap}
+    .hero-inner{max-width:1180px;margin:auto;padding:82px 24px 90px;position:relative}.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);padding:8px 13px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.08em;margin-bottom:20px;color:#dbe8ff}.tag:before{content:"●";color:#63e6be;font-size:10px}
+    h1{font-size:clamp(48px,8vw,86px);line-height:.98;letter-spacing:-.055em;max-width:850px;margin-bottom:22px}.gradient{background:linear-gradient(90deg,#fff,#8bb5ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:19px;max-width:680px;color:#b7c8df;margin-bottom:30px}
+    .buttons{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:14px 20px;border-radius:12px;font-weight:900;transition:.2s;border:1px solid transparent}.btn:hover{transform:translateY(-3px)}.btn-primary{background:#fff;color:#0b2c63;box-shadow:0 12px 30px rgba(0,0,0,.18)}.btn-blue{background:linear-gradient(135deg,#2d75ff,#155eef);color:#fff;box-shadow:0 12px 28px rgba(21,94,239,.3)}
+    main{max-width:1180px;margin:auto;padding:58px 24px 70px;color:#13233a}.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}.section-title h2{font-size:31px;letter-spacing:-.03em}.section-title p{color:#718096}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e3e9f2;border-radius:20px;padding:26px;box-shadow:0 12px 35px rgba(20,45,80,.07);transition:.2s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(20,45,80,.12)}.icon{font-size:29px;margin-bottom:15px}.card h3{font-size:21px;margin-bottom:7px}.card p{color:#66758b}
+    .games{margin-top:20px;background:linear-gradient(135deg,#0c1c33,#122b50);color:#fff;border-radius:22px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px;position:relative;overflow:hidden}.games:after{content:"🎮";position:absolute;right:30px;bottom:-28px;font-size:130px;opacity:.08;transform:rotate(-12deg)}.games-copy{position:relative;z-index:1}.games h2{font-size:30px;margin-bottom:5px}.games p{color:#b9c8dc;max-width:600px}
+    .magister{margin-top:18px;background:#eaf2fc;border-radius:22px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:25px}.magister h2{font-size:28px;margin-bottom:5px}.magister p{color:#60708a}.magister .btn{white-space:nowrap}
     footer{background:#071426;color:#aebdd0}.footer-inner{max-width:1180px;margin:auto;padding:28px 24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#fff}
     @media(max-width:800px){nav a{display:none}.cards{grid-template-columns:1fr}.section-title{display:block}.section-title p{margin-top:5px}.games,.magister{display:block}.games .btn,.magister .btn{margin-top:20px}.hero-inner{padding:65px 24px 75px}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="brand"><span class="mark">WP</span><span>Winkler Prins</span></div>
-      <nav><a href="#leerlingen">Leerlingen</a><a href="#games">School Games</a><a href="#magister">Magister</a></nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-inner">
-      <span class="tag">LEERLINGEN • WINKLER PRINS</span>
-      <h1>School, maar dan <span class="gradient">chiller.</span></h1>
-      <p>Alles wat je snel nodig hebt op één plek. Check Magister, speel games en vind handige links zonder gedoe.</p>
-      <div class="buttons">
-        <a class="btn btn-primary" href="https://winklerprins.magister.net/" target="_blank" rel="noopener noreferrer">📚 NAAR MAGISTER</a>
-        <a class="btn btn-blue" href="#games">🎮 SCHOOL GAMES</a>
-      </div>
-    </div>
-  </section>
-
-  <main id="leerlingen">
-    <div class="section-title">
-      <div><h2>Jouw shortcuts</h2><p>Geen eindeloos zoeken. Gewoon klikken.</p></div>
-    </div>
-    <div class="cards">
-      <article class="card"><div class="icon">📚</div><h3>School</h3><p>Handige schoolinformatie en links voor je schooldag.</p></article>
-      <article class="card"><div class="icon">⚡</div><h3>Snel geregeld</h3><p>Van rooster tot Magister: houd alles binnen handbereik.</p></article>
-      <article class="card"><div class="icon">🚀</div><h3>Jouw toekomst</h3><p>Blijf bezig met leren, plannen en je volgende stap.</p></article>
-    </div>
-
-    <section class="games" id="games">
-      <div class="games-copy">
-        <h2>🎮 School Games</h2>
-        <p>Even pauze? Speel games in je browser via Yandex Games.</p>
-        <a class="btn btn-blue" href="https://yandex.com/games/" target="_blank" rel="noopener noreferrer" style="margin-top:18px">OPEN YANDEX GAMES →</a>
-      </div>
-    </section>
-
-    <section class="magister" id="magister">
-      <div><h2>📊 Direct naar Magister</h2><p>Bekijk je rooster, cijfers en andere schoolgegevens.</p></div>
-      <a class="btn btn-blue" href="https://winklerprins.magister.net/" target="_blank" rel="noopener noreferrer">OPEN MAGISTER →</a>
-    </section>
+  <header><div class="nav"><div class="brand"><span class="mark">WP</span><span>Winkler Prins</span></div><nav><a href="#leerlingen">Leerlingen</a><a href="#games">School Games</a><a href="#magister">Magister</a></nav></div></header>
+  <section class="hero"><div class="hero-inner"><span class="tag">LEERLINGEN • WINKLER PRINS</span><h1>School, maar dan <span class="gradient">chiller.</span></h1><p>Alles wat je snel nodig hebt op één plek. Check Magister, speel games en vind handige links zonder gedoe.</p><div class="buttons"><a class="btn btn-primary" href="https://winklerprins.magister.net/magister/#/vandaag" target="_blank" rel="noopener noreferrer">📚 NAAR MAGISTER</a><a class="btn btn-blue" href="#games">🎮 SCHOOL GAMES</a></div></div></section>
+  <main id="leerlingen"><div class="section-title"><div><h2>Jouw shortcuts</h2><p>Geen eindeloos zoeken. Gewoon klikken.</p></div></div>
+    <div class="cards"><article class="card"><div class="icon">📚</div><h3>School</h3><p>Handige schoolinformatie en links voor je schooldag.</p></article><article class="card"><div class="icon">⚡</div><h3>Snel geregeld</h3><p>Van rooster tot Magister: houd alles binnen handbereik.</p></article><article class="card"><div class="icon">🚀</div><h3>Jouw toekomst</h3><p>Blijf bezig met leren, plannen en je volgende stap.</p></article></div>
+    <section class="games" id="games"><div class="games-copy"><h2>🎮 School Games</h2><p>Even pauze? Speel games in je browser via Yandex Games.</p><a class="btn btn-blue" href="https://yandex.com/games/" target="_blank" rel="noopener noreferrer" style="margin-top:18px">OPEN YANDEX GAMES →</a></div></section>
+    <section class="magister" id="magister"><div><h2>📊 Vandaag in Magister</h2><p>Bekijk direct je rooster, cijfers en andere schoolgegevens.</p></div><a class="btn btn-blue" href="https://winklerprins.magister.net/magister/#/vandaag" target="_blank" rel="noopener noreferrer">OPEN MAGISTER →</a></section>
   </main>
-
   <footer><div class="footer-inner"><span>© 2026 Winkler Prins leerlingenportaal</span><a href="https://winklerprins.nl/" target="_blank" rel="noopener noreferrer">Officiële website Winkler Prins</a></div></footer>
 </body>
 </html>
